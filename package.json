@@ -1,0 +1,38 @@
+{
+	"name": "typor",
+	"version": "0.8.0",
+	"description": "Generate jsonschema validation from typescript types, intended for rest api.",
+	"main": "build/index.js",
+	"scripts": {
+		"start": "node build/cli",
+		"build": "tsc -p .",
+		"dev": "tsc -w -p .",
+		"test": "node build/test"
+	},
+	"bin": "./build/cli",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/fabioziliani/typor.git"
+	},
+	"keywords": [
+		"typescript",
+		"jsonschema",
+		"rest"
+	],
+	"author": "fabioziliani",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/fabioziliani/typor/issues"
+	},
+	"homepage": "https://github.com/fabioziliani/typor#readme",
+	"devDependencies": {
+		"@types/fs-extra": "^9.0.13",
+		"@types/node": "^16.10.2",
+		"typescript": "^4.4.3"
+	},
+	"dependencies": {
+		"fs-extra": "^10.0.0",
+		"rfdc": "^1.3.0",
+		"ts-json-schema-generator": "^0.95.0"
+	}
+}

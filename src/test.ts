@@ -1,0 +1,1 @@
+console.log('no tests, we crash like real men')
