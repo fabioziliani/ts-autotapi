@@ -31,10 +31,11 @@ export function resolvePaths(confPath: Path, conf: Typor8Conf) {
 	const schemasDir = join(packageDir, schemasDirBe)
 
 
-	const clientDir = conf.clientDir as string | undefined
-
+	const clientDirBe = conf.clientDir as string | undefined
+	let clientDir: string | undefined = undefined
 	const clientTypeFiles: { from: string, to: string }[] = []
-	if (clientDir) {
+	if (clientDirBe) {
+		clientDir = join(packageDir, clientDirBe)
 		clientTypeFiles.push(mapToClient(clientDir, mainTypes))
 		if (types)
 			for (const t of types)
