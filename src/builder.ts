@@ -54,6 +54,7 @@ export async function typor8(confPath: string) {
 	async function writeSchemas() {
 		//TODO gestione errori
 		var schemas = generateSingleTypeSchemas(conf.jsonSchemaHelmetDefaults as any, schema, typeNames)
+		//TODO OPT questo è l'unico utilizzo di fs-extra; tanto vale integrare la funzione e rimuovere la dipendenza
 		await emptyDir(paths.schemasDir)
 		await Promise.all(schemas.map(x => wf(paths.schemaPath(x.typeName), JSON.stringify(x.schema))))
 
