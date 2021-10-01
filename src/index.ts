@@ -1,3 +1,3 @@
 import { typor8 } from "./builder"
 
-export const typor = typor8
+export const autotapi = typor8

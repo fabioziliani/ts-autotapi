@@ -1,6 +1,6 @@
 {
 	"name": "ts-autotapi",
-	"version": "0.8.2",
+	"version": "0.8.3",
 	"description": "Generate jsonschema validation from typescript types, intended for rest api.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
