@@ -1,5 +1,5 @@
 {
-	"name": "typor",
+	"name": "ts-autotapi",
 	"version": "0.8.0",
 	"description": "Generate jsonschema validation from typescript types, intended for rest api.",
 	"main": "build/index.js",
