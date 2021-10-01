@@ -2,14 +2,15 @@
 	"name": "ts-autotapi",
 	"version": "0.8.1",
 	"description": "Generate jsonschema validation from typescript types, intended for rest api.",
-	"main": "build/index.js",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
-		"start": "node build/cli",
+		"start": "node dist/cli",
 		"build": "tsc -p .",
 		"dev": "tsc -w -p .",
-		"test": "node build/test"
+		"test": "node dist/test"
 	},
-	"bin": "./build/cli.js",
+	"bin": "./dist/cli.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/fabioziliani/typor.git"

@@ -7,11 +7,12 @@
 		"lib": [
 			"ES2019"
 		],
-		"outDir": "./build",
+		"outDir": "./dist",
 		"target": "ES2019",
 		"module": "CommonJS",
 		"moduleResolution": "node",
 		"sourceMap": true,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+		"declaration": true
 	}
 }
