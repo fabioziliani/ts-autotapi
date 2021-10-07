@@ -29,6 +29,17 @@ export function buildClient(fetcher: Fetcher): Api {
 `
 }
 
+//TODO usare Proxy
+
+
+// export const api = new Proxy({}, {
+// 	get(target, p, receiver) {
+// 		return (ctx: ClientContext, i: unknown) => call(p as string, ctx, i)
+// 	}
+// }) as Api
+
+
+
 function apiNames(names: string[]) {
 	return `export const names: (keyof Api)[] = ${JSON.stringify(names)}
 	`
